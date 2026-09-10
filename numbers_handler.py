@@ -7,7 +7,7 @@ from aiogram.utils.keyboard import InlineKeyboardBuilder
 from config import NUMBER_MARKUP
 from database import db
 from keyboards.main import number_providers, back_button, number_status_actions
-from services import sms_activate, fivesim
+from services import fivesim
 
 router = Router(name="numbers")
 
