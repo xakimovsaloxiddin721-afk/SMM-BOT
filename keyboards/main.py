@@ -48,24 +48,15 @@ def back_button(target: str = "menu:main") -> InlineKeyboardMarkup:
 
 def number_providers() -> InlineKeyboardMarkup:
     kb = InlineKeyboardBuilder()
-
-    kb.button(
-        text="📱 SMS-Activate",
-        callback_data="numprov:sms_activate"
-    )
-
     kb.button(
         text="📱 5SIM",
         callback_data="numprov:fivesim"
     )
-
     kb.button(
         text="⬅️ Orqaga",
         callback_data="menu:main"
     )
-
     kb.adjust(1)
-
     return kb.as_markup()
 
 
