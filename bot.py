@@ -7,7 +7,7 @@ from aiogram import Bot, Dispatcher
 from database import db
 from start import router as start_router
 from admin import router as admin_router
-from numbers import router as numbers_router
+from numbers_handler import router as numbers_router
 from stars import router as stars_router
 from nakrutka import router as nakrutka_router
 
