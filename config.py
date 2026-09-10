@@ -12,6 +12,8 @@ SMM_PANEL_API_URL = os.getenv(
 
 SMM_PANEL_API_KEY = os.getenv("SMM_PANEL_API_KEY")
 
+FIVESIM_API_KEY = os.getenv("FIVESIM_API_KEY")
+
 NUMBER_MARKUP = float(os.getenv("NUMBER_MARKUP", "1.2"))
 
 ADMIN_IDS = [
@@ -25,3 +27,6 @@ if not BOT_TOKEN:
 
 if not SMM_PANEL_API_KEY:
     raise RuntimeError("SMM_PANEL_API_KEY topilmadi!")
+
+if not FIVESIM_API_KEY:
+    raise RuntimeError("FIVESIM_API_KEY topilmadi!")
